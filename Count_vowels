@@ -1,0 +1,9 @@
+def count_vowels(string)
+  count = 0 
+  arr = string.split("")
+  vowels = ["a","e","i","o","u"]
+  arr.each do |x| 
+    count += 1 if vowels.include?(x)
+  end 
+  return count 
+end
