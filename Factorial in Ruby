@@ -1,0 +1,5 @@
+def factorial(n)
+    return 1 if n == 0 
+    a = Range.new(1,n) 
+    return a.inject {|x,y| x * y } 
+end
