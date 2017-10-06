@@ -1,0 +1,6 @@
+def time_conversion(minutes)
+  hours = minutes / 60
+  mins = minutes % 60
+  mins = "00" if mins == 0
+  return "#{hours}:#{mins}"
+end
