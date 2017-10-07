@@ -1,0 +1,8 @@
+def most_common_letter(string)
+  letters = Hash.new(0)
+  s = string.split('')
+  s.each {|x| letters[x] += 1 }
+  a = letters.each { |x,y| "#{x}: #{letters[x] }"}
+  b = a.sort_by {|x,y| a[x]}.reverse!
+  return b[0]
+end
