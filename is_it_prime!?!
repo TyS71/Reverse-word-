@@ -1,0 +1,22 @@
+def is_prime?(number)
+  i = 1
+  divisible_by = []
+  if number <= 3
+    return true
+  end
+
+  while i <= number / 2
+    if number % i == 0
+      divisible_by << i
+      i += 1
+    else
+      i += 1
+    end
+  end
+
+  if divisible_by.length > 1
+    return false
+  else
+    return true
+  end
+end
