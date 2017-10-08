@@ -1,0 +1,6 @@
+def no_vowel(string)
+  vowels = ["a", "e", "i", "o", "u"]
+  string = string.split('')
+  new = vowels & string
+  return (string - new).join('')
+end
