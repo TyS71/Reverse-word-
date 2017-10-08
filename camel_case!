@@ -1,0 +1,6 @@
+def capitalize_words(string)
+  new_string = ''
+  split_string = string.split
+  split_string.each {|x| new_string << x[0].upcase + x[1,x.length] + " "}
+  return new_string.strip!
+end
