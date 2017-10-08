@@ -1,0 +1,10 @@
+def scramble_string(string, positions)
+  new_string = ''
+  i = 0 
+  lit = string.split('')
+  while i < lit.length 
+    new_string[i] = lit[positions[i]]
+    i += 1 
+  end
+  return new_string
+end
