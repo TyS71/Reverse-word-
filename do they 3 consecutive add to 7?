@@ -1,0 +1,12 @@
+def lucky_num_seven(numbers)
+  i = 0
+  while i < numbers.length - 2
+    if numbers[i] + numbers[i + 1] + numbers[i + 2] == 7
+      return true
+    else
+      i += 1
+
+    end
+  end
+  return false
+end
