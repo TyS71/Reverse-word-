@@ -1,0 +1,11 @@
+def get_odds(numbers)
+  odds = []
+  numbers.each {|x| odds << x if x % 2 != 0}
+  return odds
+end
+
+def add_odds(numbers)
+  sum = 0
+  numbers.each {|x| sum += x }
+  return sum
+end
