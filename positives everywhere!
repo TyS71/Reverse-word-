@@ -1,0 +1,25 @@
+#each letter must be surrounded by '+' otherwise it's false.  ex. "+a+b+c+" == true "aa+b+++c+d+" == false 
+
+
+
+def SimpleSymbols(str)
+    i = 0 
+    str = str.split('')
+    a = true  
+    if ('a'..'z').include?(str[0]) or ('A'..'Z').include?(str[0]) or ('0'..'9').include?(str[0]) 
+        return false
+    end
+    while i < str.length 
+        if ("a".."z").include?(str[i])
+            if str[i - 1] == "+" and str[i + 1] == "+"
+                i += 1 
+            else 
+                i += 1 
+                a = false
+            end
+        else
+            i += 1 
+        end 
+    end
+    return a 
+end
