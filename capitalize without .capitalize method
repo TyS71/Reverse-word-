@@ -1,0 +1,14 @@
+def LetterCapitalize(str)
+    str = str.split('')
+    i = 0 
+    while i < str.length 
+        if str[i] == ' '
+            str[i + 1] = str[i + 1].upcase 
+            i += 1 
+        else 
+            i += 1 
+        end 
+    end 
+    str[0] = str[0].upcase 
+    return str.join 
+end
