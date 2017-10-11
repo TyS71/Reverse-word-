@@ -1,0 +1,18 @@
+def LongestWord(sen)
+  symbols = ['!','@','#','$','%','&','?']
+  i = 0
+  arr = []
+  while i < sen.length
+    if not symbols.include?(sen[i])
+      arr.push(sen[i])
+      i += 1
+    else
+      i += 1
+     end
+  end
+
+arr = arr.join('')
+arr = arr.split(' ')
+arr.sort! {|x,y| y.length <=> x.length}
+return arr[0]
+end
