@@ -1,0 +1,10 @@
+def div_by_3_5
+  arr = (0..100).to_a
+  three_five = arr.select do |x|
+    x % 3 == 0 and x % 5 == 0
+  end
+  three_five.inject(0) do |sum, x|
+      sum += x
+      sum
+  end
+end
