@@ -1,0 +1,6 @@
+def sum_nums(num)
+  (0..num).inject do |sum, x| 
+    sum += x 
+    sum 
+  end
+end
