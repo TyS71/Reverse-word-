@@ -1,0 +1,11 @@
+def most_common_letter(string)
+  hash = Hash.new(0)
+  s = string.split('')
+  s.each do |x|
+    hash[x] += 1
+  end
+  hash = hash.sort_by do |k,v|
+    v
+  end
+  return hash[-1]
+end
