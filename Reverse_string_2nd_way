@@ -1,0 +1,10 @@
+def reverse(string)
+  i = -1
+  arr = []
+  s = string.split('') 
+  while i >= -(s.length)
+    arr << s[i]
+    i -= 1 
+  end 
+  return arr.join('')
+end
