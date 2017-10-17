@@ -1,0 +1,9 @@
+def scramble_string(string, positions)
+  arr = Array.new(0)
+  i = 0 
+  while i < string.length 
+    arr << string[positions[i]]
+    i += 1 
+  end
+  return arr.join
+end 
