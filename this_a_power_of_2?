@@ -1,0 +1,17 @@
+# Write a method that takes in a number and returns true if it is a
+# power of 2. Otherwise, return false.
+
+def is_power_of_two?(num)
+  i = 1 
+  if num == 0 
+    return false
+  end 
+  while i <= (num)
+    if i * i == num 
+      return true
+    else 
+      i += 1 
+    end 
+  end 
+  return false 
+end
