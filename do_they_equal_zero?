@@ -1,0 +1,15 @@
+#if two numbers add together to == 0 then return the positions of them in the array.  else return nil 
+
+
+def two_sum(nums)
+  nums.each do |x| 
+    nums.each do |y| 
+      if x + y == 0 
+        return nums.index(x), nums.index(y)
+      else
+        next
+      end 
+    end
+  end 
+  return nil 
+end
