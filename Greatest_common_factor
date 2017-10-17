@@ -1,0 +1,8 @@
+def greatest_common_factor(number1, number2)
+  a = [number1, number2].min
+  common_factors = []
+  (1..a).each do |num| 
+    common_factors << num if (number2 % num == 0) && (number1 % num == 0)
+  end 
+  return common_factors[-1]
+end
