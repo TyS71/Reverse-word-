@@ -1,0 +1,16 @@
+def caesar_cipher(offset, string)
+  new_string = ''
+  s = string.split('')
+  s.each do |x|
+    if x == ' '
+      new_string << ' '
+    elsif (x.ord + offset) >= (122 - offset)
+      restart = (x.ord + offset) % 122
+      new_string << (96 + restart)
+    else
+      new_string << (x.ord + offset)
+    end
+
+  end
+  return new_string.to_s
+end
