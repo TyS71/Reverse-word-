@@ -1,0 +1,7 @@
+def longest_word(sentence)
+  s = sentence.split(" ")
+  s.sort! do |a,b| 
+    b.length <=> a.length
+  end 
+  return s[0]
+end
