@@ -1,0 +1,11 @@
+#return true if 'z' comes within 3 after 'a' in a string 
+
+def nearby_az(string)
+  i = 0 
+  s = string.split('') 
+  while i < s.length
+    return true if (s[i] == 'a' && s[i + 1] == 'z') || (s[i] == 'a' && s[i + 2] == 'z') || (s[i] == 'a' && s[i + 3] == 'z')
+    i += 1 
+  end
+  return false 
+end
