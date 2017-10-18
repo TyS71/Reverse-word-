@@ -1,0 +1,15 @@
+# Write a method that takes in a string and returns the number of
+# letters that appear more than once in the string
+
+
+def num_repeats(string)
+  letters = Hash.new(0)
+  s = string.split('')
+  s.each do |x| 
+    letters[x] += 1 
+  end 
+  arr = letters.select do |k,v| 
+     v > 1 
+  end 
+  return arr.length
+end
