@@ -1,0 +1,6 @@
+results = []
+arr = (1..100).to_a
+
+arr.select do |x|
+  results << x if (x % 3 == 0 and not  x % 5 == 0) || (x % 5 == 0 and not x % 3 == 0)
+end
