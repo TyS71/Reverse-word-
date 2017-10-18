@@ -1,3 +1,6 @@
+#gives array of nums that are divisible by one or the other but not both 
+#can be used with any 2 numbers. 
+
 results = []
 arr = (1..100).to_a
 
