@@ -1,0 +1,16 @@
+class Dog
+  attr_reader :name, :good_boy
+  def initialize(arg)
+    @name = arg.fetch(:name)
+    @good_boy = arg.fetch(:good_boy)
+  end
+  def to_s
+    "They're all good dogs, Brent"
+  end
+end
+
+brent = Dog.new({name: "Brent", good_boy: true })
+
+
+
+print brent.good_boy.to_s + " #{brent}"
