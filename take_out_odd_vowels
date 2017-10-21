@@ -1,0 +1,16 @@
+def disemvowel(str)
+  str = str.split('')
+  new_str = [] 
+  vowels = %w(a e i o u)
+  i = 0 
+  while i < str.length 
+    if vowels.include?(str[i]) && i.odd?  
+      i += 1 
+    else 
+      new_str << str[i]
+      i += 1 
+    end 
+  end 
+  new_str.join
+      
+end
