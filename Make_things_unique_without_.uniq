@@ -1,0 +1,9 @@
+#no repeats without using .uniq method 
+
+def unique(ints)
+  arr = []
+  ints.each do |x| 
+    arr << x if arr.include?(x) == false 
+  end 
+  arr 
+end 
